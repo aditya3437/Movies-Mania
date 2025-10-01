@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  border-bottom: 1px solid #e6e6e6;
+  background-color: #111; /* dark background for contrast */
+  flex-wrap: wrap; /* ensures responsiveness on smaller screens */
+}
+
+.navbar > h1 {
+  font-size: 30px;
+  color: var(--heading-color); /* fixed variable naming */
+}
+
+/* Navigation Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* spacing between links */
+  flex-wrap: wrap; /* responsive wrap */
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--heading-color); /* hover highlight */
+}
+
+/* Icon inside links */
+.navbar_emoji {
+  margin-right: 7px; /* space between icon and text */
+  font-size: 22px;   /* adjust icon size */
+  display: flex;
+  align-items: center;
+}

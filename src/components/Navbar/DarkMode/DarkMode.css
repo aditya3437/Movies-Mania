@@ -1,0 +1,52 @@
+.dark_mode {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Hide the default checkbox */
+#darkmode_toggle {
+  display: none;
+}
+
+/* Label acts as the toggle switch */
+.darkmode_label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  background-color: #1a1a1a;
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: #ffe400;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  user-select: none; /* prevent text selection while toggling */
+}
+
+/* Create a toggle ball inside label */
+.darkmode_label::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  width: 28px;
+  height: 28px;
+  background-color: #ffe400;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Move the ball when checked */
+#darkmode_toggle:checked + .darkmode_label::after {
+  transform: translateX(100%) translateY(-50%);
+}
+
+/* Optional: change label background on toggle */
+#darkmode_toggle:checked + .darkmode_label {
+  background-color: #333;
+}

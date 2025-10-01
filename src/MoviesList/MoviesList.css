@@ -1,0 +1,134 @@
+/* Movies List Section */
+.movies_list {
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #2c2c2c; /* subtle separator */
+  flex-wrap: wrap; /* ensure responsiveness on small screens */
+}
+
+.movies_list_heading {
+  display: flex;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--heading-color);
+  gap: 8px; /* space between text and icon */
+}
+
+.movies_list_fs {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* spacing between filter & dropdowns */
+  flex-wrap: wrap; /* responsive wrap */
+}
+
+/* Filter stars */
+.movies_filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.movies_filter_item {
+  padding: 6px 12px;
+  background-color: #222;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.movies_filter_item:hover {
+  background-color: #444;
+  color: var(--heading-color);
+}
+
+/* Sorting dropdowns */
+.movies_sorting {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.movies_sorting:hover {
+  border-color: var(--heading-color);
+}
+
+/* Movies Cards Grid */
+.movies_card {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px 30px;
+}
+
+/* Pagination Buttons */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pagination button {
+  padding: 8px 16px;
+  background-color: var(--heading-color);
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.pagination button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Search Input */
+.movies_search {
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #111;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.movies_search:focus {
+  border-color: var(--heading-color);
+  outline: none;
+}
+
+.movies_search_btn{
+  border-radius: 5px;
+  padding: 6px 12px;
+  background-color: var(--heading-color);
+  color: var(--text-color);
+  border: 1px solid #444;
+  background-color: #111;
+  color: #fff;
+  cursor: pointer;
+}
